@@ -1,5 +1,5 @@
 #!/bin/bash
-# truffle compile --all
+truffle compile --all
 
 if [ "$1"x = "proxy-dpp"x ]
 then
@@ -44,6 +44,11 @@ fi
 if [ "$1"x = "vdodo-mintRedeem"x ]
 then
 	truffle test ./test/vDODO/mintRedeem.test.ts
+fi
+
+if [ "$1"x = "nft"x ]
+then
+	truffle test ./test/DODONFT/nftMainFlow.test.ts
 fi
 
 
