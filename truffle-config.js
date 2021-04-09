@@ -55,7 +55,7 @@ module.exports = {
     CPFactory:          false,
     MultiCall:          false,
     UpCpProxy:          false,
-    DEPLOY_NFT:         true
+    DEPLOY_NFT:         false
   },
 
   networks: {
