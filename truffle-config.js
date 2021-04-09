@@ -55,7 +55,7 @@ module.exports = {
     CPFactory:          false,
     MultiCall:          false,
     UpCpProxy:          false,
-    DEPLOY_NFT:         false
+    DEPLOY_NFT:         true
   },
 
   networks: {
@@ -79,7 +79,7 @@ module.exports = {
         return new HDWalletProvider(privKey, "https://kovan.infura.io/v3/" + infuraId);
       },
       gas: 12000000,
-      gasPrice: 1000000000,
+      gasPrice: 10000000000,
       network_id: 42,
       skipDryRun: true
     },
